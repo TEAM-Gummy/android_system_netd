@@ -1,6 +1,11 @@
 /*
  * Copyright (C) 2008 The Android Open Source Project
  *
+ * Copyright (c) 2013, The Linux Foundation. All rights reserved.
+ *
+ * Not a Contribution. Apache license notifications and license
+ * are retained for attribution purposes only.
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -28,7 +33,7 @@ public:
     static const int TetherInterfaceListResult = 111;
     static const int TetherDnsFwdTgtListResult = 112;
     static const int TtyListResult             = 113;
-
+    static const int TetheringStatsListResult  = 114;
 
     // 200 series - Requested action has been successfully completed
     static const int CommandOkay               = 200;
@@ -45,6 +50,10 @@ public:
     static const int TetheringStatsResult      = 221;
     static const int DnsProxyQueryResult       = 222;
     static const int ClatdStatusResult         = 223;
+    static const int InterfaceGetMtuResult     = 224;
+    static const int GetMarkResult             = 225;
+    static const int V6RtrAdvResult            = 226;
+    static const int RouteConfigurationResult  = 227;
 
     // 400 series - The command was accepted but the requested action
     // did not take place.
@@ -73,5 +82,6 @@ public:
     static const int ServiceGetAddrInfoFailed       = 611;
     static const int ServiceGetAddrInfoSuccess      = 612;
     static const int InterfaceClassActivity         = 613;
+    static const int InterfaceAddressChange         = 614;
 };
 #endif
